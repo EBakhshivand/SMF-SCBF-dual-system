@@ -339,14 +339,14 @@ for {set i $NStory} {$i>=1} {incr i -1} {
 		set MrPB_b [expr $Beta1*(1.4*$MD_g+0.5*$ML_g)+1.0*$MrbPB($i)]
 		set PrPB_b [expr 1.0*$PrbPB($i)]
 		
-		# Check beam for moderately ductile
+		# Check beam for highly ductile
 		set Ca [expr $Pr_b/(0.9*1.4*$Fy*$Ag_b)]
 		if {$Ca<=0.114} {
 			set Landaw [expr 2.57*sqrt($E/(1.4*$Fy))*(1-1.04*$Ca)]
 		} else {
 			Max Landaw [expr 0.88*sqrt($E/(1.4*$Fy))*(2.68-$Ca)] [expr 1.57*sqrt($E/(1.4*$Fy))]
 		}
-		if {($bftf_b<=(0.4*sqrt($E/(1.4*$Fy))))&&($htw_b<=$Landaw)} {
+		if {($bftf_b<=(0.32*sqrt($E/(1.4*$Fy))))&&($htw_b<=$Landaw)} {
 			set Landa_mod_B "OK"
 		} else {
 			set Landa_mod_B "Not OK"
