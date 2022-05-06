@@ -1,4 +1,4 @@
-# SMRF-SCBF-dual-system
+# SMF-SCBF-dual-system
 This Repository contains full details of the seismic design procedure of the studied building archetypes along with the related files generated for this purpose.
 "Design-Procedure.pdf" describes the way of using all the related files.
 "Gusset-Plate-Design.tcl" contains a subroutine which is used to design gusset plates using the method presented by Astaneh-Asl et al.
