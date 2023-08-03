@@ -70,8 +70,8 @@ set Usmall [expr 1/$Ubig]; 			# a really small number
 
 set NStory 2; # number of stories
 
-# Insert section properties
-# -------------------------
+# Insert section properties (Note: section properties can be extracted from Section-Details.xlsx)
+# -----------------------------------------------------------------------------------------------
 set inColumnID [open "Section_Properties/Columns.txt"]
 set CsecData [split [read $inColumnID] \n]
 set inBraceID [open "Section_Properties/Braces.txt"]
